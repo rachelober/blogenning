@@ -1,0 +1,24 @@
+<h1>Listing user_roles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Permissions</th>
+    <th>Color</th>
+  </tr>
+
+<% @user_roles.each do |user_role| %>
+  <tr>
+    <td><%=h user_role.name %></td>
+    <td><%=h user_role.permissions %></td>
+    <td><%=h user_role.color %></td>
+    <td><%= link_to 'Show', [:admin, user_role] %></td>
+    <td><%= link_to 'Edit', edit_admin_user_role_path(user_role) %></td>
+    <td><%= link_to 'Destroy', [:admin, user_role], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New user_role', new_admin_user_role_path %>

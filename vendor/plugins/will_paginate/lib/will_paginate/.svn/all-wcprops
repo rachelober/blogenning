@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/landofrhul/!svn/ver/75/trunk/vendor/plugins/will_paginate/lib/will_paginate
+END
+finder.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/landofrhul/!svn/ver/75/trunk/vendor/plugins/will_paginate/lib/will_paginate/finder.rb
+END
+view_helpers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/landofrhul/!svn/ver/75/trunk/vendor/plugins/will_paginate/lib/will_paginate/view_helpers.rb
+END
+collection.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/landofrhul/!svn/ver/75/trunk/vendor/plugins/will_paginate/lib/will_paginate/collection.rb
+END
+core_ext.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/landofrhul/!svn/ver/75/trunk/vendor/plugins/will_paginate/lib/will_paginate/core_ext.rb
+END

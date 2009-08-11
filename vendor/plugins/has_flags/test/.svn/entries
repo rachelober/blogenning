@@ -1,0 +1,41 @@
+8
+
+dir
+141
+http://svn.landofrhul.com/landofrhul/trunk/vendor/plugins/has_flags/test
+http://svn.landofrhul.com/landofrhul
+
+
+
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+83da9bf8-f623-0410-a531-e74c6111affb
+
+has_flags_test.rb
+file
+
+
+
+
+2006-08-11T12:05:14.000000Z
+e2df693890d9956254c5f04e9c6a6576
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+has-props
+

@@ -1,0 +1,26 @@
+<h1>Listing entries</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>User</th>
+    <th>Round</th>
+    <th>Url</th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%=h entry.name %></td>
+    <td><%=h entry.user %></td>
+    <td><%=h entry.round %></td>
+    <td><%=h entry.url %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New entry', new_entry_path %>

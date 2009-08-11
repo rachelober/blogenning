@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @entry.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @entry.user.name %>
+</p>
+
+<p>
+  <b>Round:</b>
+  <%=h @entry.round.id %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @entry.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_entry_path(@entry) %> |
+<%= link_to 'Back', admin_entries_path %>

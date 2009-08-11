@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>The Blogenning: <%= controller.controller_name %>: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+
+<% flash.each do |key, msg| %>
+	<%= content_tag :div, msg, :class => "flash_#{key}", :id => key %>
+<% end -%>
+
+<% if logged_in? %>
+<%= link_to "Logout", logout_login_path %>
+	<% if logged_in_user.role.admin_panel? -%>
+		 - <%= link_to "Administration", admin_index_path %>
+	<% end %>
+<% else %>
+<%= link_to "Login", login_path %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

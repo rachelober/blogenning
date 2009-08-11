@@ -1,0 +1,67 @@
+<h1>Register</h1>
+
+<%= error_messages_for :user %>
+
+<% form_for @user, :url => { :action => :create }  do |f| %>
+
+  <%= f.hidden_field :last_ip, { :value => request.remote_ip } %>
+  
+  <p>
+  	<b>Nickname</b><br />
+	<%= f.text_field :nickname %>
+  </p>
+  
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+  
+  <p>
+  	<b>Password</b><br />
+	<%= f.password_field :password %>
+  </p>
+  
+  <p>
+  	<b>Confirm Password</b><br />
+	<%= f.password_field :password_confirmation %>
+  </p>
+  
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+  
+  <p>
+    <b>Confirm Email</b><br />
+    <%= f.text_field :email_confirmation %>
+  </p>
+
+  <p>
+    <b>Date of Birth</b><br />
+    <%= f.date_select :dob, :start_year => 1900 %>
+  </p>
+
+  <p>
+    <b>Gender</b><br />
+	<%= f.radio_button :gender, "female" %> <%= label(:user, :gender_female, "Female") %>
+	<%= f.radio_button :gender, "male" %> <%= label(:user, :gender_male, "Male") %>
+  </p>
+  
+  <p>
+  	<b>Country</b><br />
+	<%= f.country_select :country, ["United States", "Canada"], {} %>
+  </p>
+  
+  <p>
+  	<b>Time Zone</b><br />
+	<%= f.time_zone_select :time_zone, TimeZone.us_zones, { :include_blank => "Please select your time zone" } %>
+  </p>
+  
+  <p>
+  	<b>Invitation Code</b><br />
+	If you have an invitation code, please input it here.<br />
+	<%= text_field_tag :invitation %>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

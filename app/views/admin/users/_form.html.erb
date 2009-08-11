@@ -1,0 +1,23 @@
+<% form_for([:admin, @user]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+	<p>
+    Role<br />
+    <%= f.select :role_id, select_role, { :include_blank => true } %>
+  </p>
+  <p>
+    <%= f.label :blog_url %><br />
+    <%= f.text_field :blog_url %>
+  </p>
+  <p>
+    <%= f.submit button_name %>
+  </p>
+<% end %>

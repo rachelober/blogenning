@@ -1,0 +1,32 @@
+<h1>Register</h1>
+
+<% form_for @user, :url => { :action => :create }  do |f| %>
+
+	<%= f.error_messages %>
+
+  <%= f.hidden_field :last_ip, { :value => request.remote_ip } %>
+  
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+  	<b>Password</b><br />
+		<%= f.password_field :password %>
+  </p>
+  <p>
+  	<b>Confirm Password</b><br />
+		<%= f.password_field :password_confirmation %>
+  </p>
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <b>Confirm Email</b><br />
+    <%= f.text_field :email_confirmation %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

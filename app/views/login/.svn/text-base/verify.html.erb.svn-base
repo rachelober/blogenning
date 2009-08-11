@@ -1,0 +1,17 @@
+<h1>Verify Your Account</h1>
+
+<% form_tag 'verify_code' do -%>
+  <p>
+    <b>Email</b><br />
+    <%= text_field_tag 'email', nil %>
+  </p>
+  
+  <p>
+    <b>Verification Code</b><br />
+	<%= text_field_tag 'code', nil %>
+  </p>
+  
+  <p>
+    <%= submit_tag "Verify Account" %>
+  </p>
+<% end -%>

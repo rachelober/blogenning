@@ -1,0 +1,52 @@
+8
+
+dir
+141
+http://svn.landofrhul.com/landofrhul/trunk/vendor/plugins/validates_email_format_of/test/fixtures
+http://svn.landofrhul.com/landofrhul
+
+
+
+2008-07-04T01:35:40.794230Z
+112
+brightpromise
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+83da9bf8-f623-0410-a531-e74c6111affb
+
+people.yml
+file
+
+
+
+
+2008-07-04T01:13:05.000000Z
+36de19f692148341baf5fc4ae9ae2040
+2008-07-04T01:35:40.794230Z
+112
+brightpromise
+
+person.rb
+file
+
+
+
+
+2008-07-04T01:13:05.000000Z
+13f3d081f6eb7f551c1ddba6de6281a4
+2008-07-04T01:35:40.794230Z
+112
+brightpromise
+

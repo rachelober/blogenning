@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/landofrhul/!svn/ver/112/trunk/vendor/plugins/validates_email_format_of/test
+END
+validates_email_format_of_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/landofrhul/!svn/ver/112/trunk/vendor/plugins/validates_email_format_of/test/validates_email_format_of_test.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/landofrhul/!svn/ver/112/trunk/vendor/plugins/validates_email_format_of/test/database.yml
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/landofrhul/!svn/ver/112/trunk/vendor/plugins/validates_email_format_of/test/test_helper.rb
+END
+schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/landofrhul/!svn/ver/112/trunk/vendor/plugins/validates_email_format_of/test/schema.rb
+END

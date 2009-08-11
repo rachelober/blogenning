@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/landofrhul/!svn/ver/135/trunk/app/views/login
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/landofrhul/!svn/ver/144/trunk/app/views/login/show.html.erb
+END
+password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/landofrhul/!svn/ver/135/trunk/app/views/login/password.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/landofrhul/!svn/ver/144/trunk/app/views/login/_form.html.erb
+END
+invitation.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/landofrhul/!svn/ver/120/trunk/app/views/login/invitation.html.erb
+END
+register.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/landofrhul/!svn/ver/120/trunk/app/views/login/register.html.erb
+END
+verify.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/landofrhul/!svn/ver/135/trunk/app/views/login/verify.html.erb
+END

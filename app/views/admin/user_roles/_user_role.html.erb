@@ -1,0 +1,9 @@
+<h2><%=h @user_role.name %></h2>
+
+<p>
+  <b>Permissions:</b><br />
+  <%= check_box_tag :form, "true", @user_role.entry_post?, { :disabled => true } %> Make Entry Posts?<br />
+  <%= check_box_tag :form, "true", @user_role.round_post?, { :disabled => true } %> Make Round Posts?<br />
+  <%= check_box_tag :form, "true", @user_role.admin_panel?, { :disabled => true } %> Access to Administration Panel?<br />
+  <%= check_box_tag :form, "true", @user_role.mod_panel?, { :disabled => true } %> Access to Moderator's Panel?
+</p>

@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Password salt:</b>
+  <%=h @user.password_salt %>
+</p>
+
+<p>
+  <b>Password hash:</b>
+  <%=h @user.password_hash %>
+</p>
+
+<p>
+  <b>Blog url:</b>
+  <%=h @user.blog_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

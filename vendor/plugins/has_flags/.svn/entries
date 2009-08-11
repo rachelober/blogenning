@@ -1,0 +1,102 @@
+8
+
+dir
+141
+http://svn.landofrhul.com/landofrhul/trunk/vendor/plugins/has_flags
+http://svn.landofrhul.com/landofrhul
+
+
+
+2008-07-04T18:37:33.005431Z
+115
+brightpromise
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+83da9bf8-f623-0410-a531-e74c6111affb
+
+test
+dir
+
+LICENSE.txt
+file
+
+
+
+
+2006-08-02T23:39:54.000000Z
+3b83ef96387f14655fc854ddc3c6bd57
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+has-props
+
+Rakefile
+file
+
+
+
+
+2006-08-02T20:53:10.000000Z
+0651bd88dd1e58c8c6cdad40870c9062
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+has-props
+
+init.rb
+file
+
+
+
+
+2006-08-02T23:13:54.000000Z
+b5717ac28e5cb2d13f6a2f1108db6ad1
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+has-props
+
+tasks
+dir
+
+lib
+dir
+
+install.rb
+file
+
+
+
+
+2006-08-02T20:53:10.000000Z
+cbe738c10eba4ae2da8c6859c9723e44
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+has-props
+
+README
+file
+
+
+
+
+2006-08-11T13:22:08.000000Z
+5328e186e2ee51ed5604f11417de231a
+2008-07-04T16:35:17.010278Z
+114
+brightpromise
+has-props
+

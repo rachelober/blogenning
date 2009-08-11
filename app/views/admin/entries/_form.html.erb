@@ -1,0 +1,23 @@
+<% form_for([:admin, @entry]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :user %><br />
+		<%= f.select :user_id, select_user, { :include_blank => true } %>
+  </p>
+  <p>
+    <%= f.label :round %><br />
+		<%= f.select :round_id, select_round, { :include_blank => true } %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit button_name %>
+  </p>
+<% end %>

@@ -1,0 +1,52 @@
+8
+
+dir
+141
+http://svn.landofrhul.com/landofrhul/trunk/vendor/plugins/action_mailer_optional_tls/lib
+http://svn.landofrhul.com/landofrhul
+
+
+
+2008-06-10T22:01:38.289361Z
+77
+brightpromise
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+83da9bf8-f623-0410-a531-e74c6111affb
+
+smtp_tls.rb
+file
+
+
+
+
+2008-06-10T22:35:11.000000Z
+7d0b1de8d6cdbafacacd98cd9087eecc
+2008-06-10T22:01:38.289361Z
+77
+brightpromise
+
+action_mailer_tls.rb
+file
+
+
+
+
+2008-06-10T22:35:11.000000Z
+021f1f06701962a2783fe6088ff3c99f
+2008-06-10T22:01:38.289361Z
+77
+brightpromise
+

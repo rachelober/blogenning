@@ -1,0 +1,9 @@
+<h1>Administration Center</h1>
+
+<h2><%= link_to "User Admin", admin_users_url %> (<%=h @users.size %> users)</h2>
+
+<h2><%= link_to "User Roles Admin", admin_user_roles_url %> (<%=h @user_roles.size %> user roles)</h2>
+
+<h2><%= link_to "Rounds Admin", admin_rounds_url %> (<%=h @rounds.size %> rounds)</h2>
+
+<h2><%= link_to "Entries Admin", admin_entries_url %> (<%=h @entries.size %> entries)</h2>

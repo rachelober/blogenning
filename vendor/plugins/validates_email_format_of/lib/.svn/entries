@@ -1,0 +1,40 @@
+8
+
+dir
+141
+http://svn.landofrhul.com/landofrhul/trunk/vendor/plugins/validates_email_format_of/lib
+http://svn.landofrhul.com/landofrhul
+
+
+
+2008-07-04T01:35:40.794230Z
+112
+brightpromise
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+83da9bf8-f623-0410-a531-e74c6111affb
+
+validates_email_format_of.rb
+file
+
+
+
+
+2008-07-04T01:13:04.000000Z
+9382fbe03683f564d5412536175eea83
+2008-07-04T01:35:40.794230Z
+112
+brightpromise
+

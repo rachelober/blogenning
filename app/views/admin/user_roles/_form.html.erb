@@ -1,0 +1,20 @@
+<% form_for([:admin, @user_role]) do |f| %>
+	<%= f.error_messages %>
+
+  <p>
+    <b>Role Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Permissions</b><br />
+    <%= f.check_box :entry_post %> <%= label(:user_role, :blog_post, "Make Entry Posts?") %><br />
+		<%= f.check_box :round_post %> <%= label(:user_role, :blog_comment, "Make Round Posts?") %><br />
+		<%= f.check_box :admin_panel %> <%= label(:user_role, :admin_panel, "Access to Administration Panel?") %><br />
+		<%= f.check_box :mod_panel %> <%= label(:user_role, :mod_panel, "Access to Moderator's Panel?") %>
+  </p>
+
+  <p>
+    <%= f.submit button_name %>
+  </p>
+<% end %>

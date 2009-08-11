@@ -1,0 +1,11 @@
+<% form_for([:admin, @round]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+  <p>
+    <%= f.submit button_name %>
+  </p>
+<% end %>

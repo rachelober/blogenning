@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/landofrhul/!svn/ver/115/trunk/vendor/plugins/has_flags
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/landofrhul/!svn/ver/114/trunk/vendor/plugins/has_flags/LICENSE.txt
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/landofrhul/!svn/ver/114/trunk/vendor/plugins/has_flags/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/landofrhul/!svn/ver/114/trunk/vendor/plugins/has_flags/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/landofrhul/!svn/ver/114/trunk/vendor/plugins/has_flags/install.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/landofrhul/!svn/ver/114/trunk/vendor/plugins/has_flags/README
+END
