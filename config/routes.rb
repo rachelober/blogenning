@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :user_roles
+  
+  map.resources :entries
 
   map.resources :rounds, :has_many => :entries
   

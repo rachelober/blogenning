@@ -1,8 +1,9 @@
 class EntriesController < ApplicationController
+  before_filter :authenticate
   before_filter :load_user
   
   def load_user
-    @user = User.find(params[:user_id])
+    @user = User.find(logged_in_user.id)
   end
   
   # GET /entries
@@ -15,7 +16,7 @@ class EntriesController < ApplicationController
       format.xml  { render :xml => @entries }
     end
   end
-
+  
   # GET /entries/1
   # GET /entries/1.xml
   def show
@@ -23,7 +24,6 @@ class EntriesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @entry }
     end
   end
 
@@ -46,10 +46,15 @@ class EntriesController < ApplicationController
   # POST /entries
   # POST /entries.xml
   def create
+    if @user.up_to_date?
+      @round = Round.new
+    else
+      @round = Round.find(params[:entry, :round])
+    end
     @entry = Entry.new(params[:entry])
 
     respond_to do |format|
-      if @entry.save
+      if @round.save and @entry.save
         flash[:notice] = 'Entry was successfully created.'
         format.html { redirect_to(@entry) }
         format.xml  { render :xml => @entry, :status => :created, :location => @entry }

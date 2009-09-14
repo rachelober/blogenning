@@ -67,7 +67,7 @@ class User < ActiveRecord::Base
     @password
   end
   
-  # password= : -> String
+  # password= : String -> String
   # 
   # Setter method for the User's password.
   def password=(pwd)
@@ -86,7 +86,7 @@ class User < ActiveRecord::Base
     return password
   end
   
-  # authenticate : String String -> User
+  # authenticate : String String -> User (or nil)
   #
   # Determine if the user is authenticated.  
   def self.authenticate(email, password) 
@@ -114,6 +114,13 @@ class User < ActiveRecord::Base
   # cryptic messages above.
   def account_type
     self.role.name
+  end
+  
+  # up_to_date? : -> Boolean
+  #
+  # Is the user up-to-date on their posts?
+  def up_to_date?
+    self.entries.size >= Round.all.size
   end
   
   private

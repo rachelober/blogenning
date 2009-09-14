@@ -1,8 +1,13 @@
+<h1>Round <%= @round.id %></h1>
+
 <p>
   <b>Start date:</b>
-  <%=h @round.start_date %>
+  <%=h @round.created_at.to_s(:posted_on) %>
+</p>
+
+<p>
+	<b>Participants:</b>
 </p>
 
 
-<%= link_to 'Edit', edit_round_path(@round) %> |
 <%= link_to 'Back', rounds_path %>

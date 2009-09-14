@@ -1,20 +1,17 @@
-<h1>Listing entries</h1>
+<h1>Listing Your Entries</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>User</th>
-    <th>Round</th>
-    <th>Url</th>
+	  <th>Round</th>
+    <th>Name &amp; URL</th>
+		<th>Timestamp</th>
   </tr>
 
 <% @entries.each do |entry| %>
   <tr>
-    <td><%=h entry.name %></td>
-    <td><%=h entry.user %></td>
-    <td><%=h entry.round %></td>
-    <td><%=h entry.url %></td>
-    <td><%= link_to 'Show', entry %></td>
+		<td><%=h entry.round.id %></td>
+    <td><%= link_to entry.name, entry.url %></td>
+    <td><%=h entry.created_at.to_s(:posted_on) %></td>
     <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
     <td><%= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

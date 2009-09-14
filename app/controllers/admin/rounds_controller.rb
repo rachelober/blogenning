@@ -42,7 +42,7 @@ class Admin::RoundsController < ApplicationController
     respond_to do |format|
       if @round.save
         flash[:notice] = 'Round was successfully created.'
-        format.html { redirect_to(@round) }
+        format.html { redirect_to([:admin, @round]) }
       else
         format.html { render :action => "new" }
       end
@@ -57,7 +57,7 @@ class Admin::RoundsController < ApplicationController
     respond_to do |format|
       if @round.update_attributes(params[:round])
         flash[:notice] = 'Round was successfully updated.'
-        format.html { redirect_to(@round) }
+        format.html { redirect_to([:admin, @round]) }
       else
         format.html { render :action => "edit" }
       end
@@ -71,7 +71,7 @@ class Admin::RoundsController < ApplicationController
     @round.destroy
 
     respond_to do |format|
-      format.html { redirect_to(rounds_url) }
+      format.html { redirect_to(admin_rounds_url) }
     end
   end
 end

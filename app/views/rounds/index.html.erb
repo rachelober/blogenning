@@ -1,7 +1,5 @@
 <h1>The Blogenning</h1>
 
-<%= logged_in? %>
-
 <p>Welcome to the Blogenning. It all started with some bored individuals who wanted to write more. Little did they know others out there who also wanted to write more and were all too willing to FORCE other people to write more. Brought together by their lack of sanity and similar tastes in humor, the group of Blogenners agreed to a blood pact: When someone posts to their blog, all other in the pact need to post within 24 hours else face untimely death.</p>
 
 <p>Well, okay the pact is a little less severe than that but you get the drift. Visit the links below to find out more about the <strike>un-</strike>willing participants and their respective blogs.</p>
@@ -9,8 +7,8 @@
 <h2>We are currently on round <%=h @rounds.first.id %></h2>
 
 <% @rounds.each do |round| %>
-	<h2>Round <%=h round.id %></h2>
-	<h3>Started @ <%=h round.created_at %></h3>
+	<h2><%= link_to "Round #{round.id}", round %></h2>
+	<h3>Started on <%=h round.created_at.to_s(:posted_on) %></h3>
 	<ul>
 	<% round.entries.each do |entry| %>
     <li><%= link_to entry.user.name, entry.user %> - <%= link_to entry.name, entry.url %></li>

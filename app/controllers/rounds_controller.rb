@@ -14,6 +14,8 @@ class RoundsController < ApplicationController
   # GET /rounds/1.xml
   def show
     @round = Round.find(params[:id])
+    @users.
+    @entries = Entry.find(:all, :conditions => ["round_id = ?", @round])
 
     respond_to do |format|
       format.html # show.html.erb
