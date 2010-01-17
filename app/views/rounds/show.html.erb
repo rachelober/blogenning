@@ -1,7 +1,7 @@
 <h1>Round <%= @round.id %></h1>
 
 <p>
-  <b>Start date:</b>
+  <b>Start date:</b><br/>
   <%=h @round.created_at.to_s(:posted_on) %>
 </p>
 
@@ -9,5 +9,19 @@
 	<b>Participants:</b>
 </p>
 
+<ol>
+	<% @entries.each do |entry| %>
+    <li><%= link_to entry.user.name, entry.user %> - <%= link_to entry.name, entry.url %> (<%=h entry.created_at.to_s(:posted_on)%>)</li>
+	<% end %>
+</ol>
 
+<p>
+	<b>Waiting On:</b>
+</p>
+
+<ul>
+	<% @waiting.each do |user| %>
+    <li><%= link_to user.name, user %></li>
+	<% end %>
+</ul>
 <%= link_to 'Back', rounds_path %>
