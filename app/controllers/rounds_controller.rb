@@ -14,8 +14,9 @@ class RoundsController < ApplicationController
   # GET /rounds/1.xml
   def show
     @round = Round.find(params[:id])
-    @users.
-    @entries = Entry.find(:all, :conditions => ["round_id = ?", @round])
+    @entries = Entry.find(:all, :conditions => ["round_id = ?", @round], :order => ["created_at DESC"])
+    @users = User.find(:all)
+    @waiting = @users.delete_if {|x| @round.users.include?(x) }
 
     respond_to do |format|
       format.html # show.html.erb

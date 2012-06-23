@@ -49,10 +49,9 @@ class EntriesController < ApplicationController
     if @user.up_to_date?
       @round = Round.new
     else
-      @round = Round.find(params[:entry, :round])
+      @round = Round.find(params[:entry][:round_id])
     end
     @entry = Entry.new(params[:entry])
-
     respond_to do |format|
       if @round.save and @entry.save
         flash[:notice] = 'Entry was successfully created.'

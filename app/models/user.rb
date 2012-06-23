@@ -123,6 +123,12 @@ class User < ActiveRecord::Base
     self.entries.size >= Round.all.size
   end
   
+  # winner_count : -> Integer
+  # 
+  # Returns how many times the user has been a "winner" by posting on time.
+  def winner_count
+  end
+  
   private
   # create_new_salt : -> String
   # 

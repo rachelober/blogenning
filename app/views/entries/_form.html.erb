@@ -2,21 +2,23 @@
   <%= f.error_messages %>
 	<%= hidden_field_tag "entry[user_id]", @entry.user ? @entry.user.id : logged_in_user.id %>
 	<%= hidden_field_tag "entry[round_id]", @entry.round ? @entry.round.id : logged_in_user.entries.size + 1 %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :user %><br />
+	<p>
+    <%= f.label :user, "Posting As" %><br />
 		<%= logged_in_user.name %>
   </p>
-  <p>
+	<p>
     <%= f.label :round %><br />
 		<%= @entry.round ? @entry.round.id : logged_in_user.entries.size + 1 %>
   </p>
+
   <p>
-    <%= f.label :url %><br />
+    <%= f.label :name, "Entry Title" %><br />
+    <%= f.text_field :name %>
+  </p>
+  
+  
+  <p>
+    <%= f.label :url, "Entry URL" %><br />
     <%= f.text_field :url %>
   </p>
   <p>

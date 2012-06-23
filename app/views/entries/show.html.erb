@@ -1,21 +1,23 @@
+<h1>Entry for Round <%=h @entry.round.id %></h1>
+
 <p>
-  <b>Name:</b>
+  <b>Posted As:</b>
+	<%= link_to @entry.user.name, @entry.user %>
+</p>
+
+<p>
+  <b>Entry Name:</b>
   <%=h @entry.name %>
 </p>
 
 <p>
-  <b>User:</b>
-  <%=h @entry.user %>
+  <b>Entry Url:</b>
+  <%= link_to @entry.url, @entry.url %>
 </p>
 
 <p>
-  <b>Round:</b>
-  <%=h @entry.round %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%=h @entry.url %>
+	<b>Entry Status:</b>
+	
 </p>
 
 
